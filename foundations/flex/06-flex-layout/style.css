@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 img {
@@ -23,4 +27,53 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+/* Added color and no text-decoration*/
+ul{
+  list-style-type: none;
+  
+}
+/* Remove the undeline on the link*/
+
+/* Made everyboy with flex display, using space-between on the to justify the content*/
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+}
+
+.header .left-links, .footer .left-links{
+  display: flex;
+  gap: 10px;
+  margin-left: -16px;
+}
+
+.header .right-links, .footer .right-links{
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 24px;
+}
+/*Footer background-color*/
+.footer{
+  background-color: #eeeeee;
+}
+
+/* Made everyboy with flex display, aligning itself to the center and align itsd items to the center (flex-direction = column*/
+.content{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 16px;
+}
+
+button{
+  padding: 10px;
 }
